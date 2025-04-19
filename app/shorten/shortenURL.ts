@@ -24,7 +24,7 @@ export default async function shortenURL(url: string, alias: string) {
       return { error: 'Please choose another alias!' }
     }
 
-    const res = await urlCollection.insertOne({alias, url})
+    await urlCollection.insertOne({alias, url})
 
     return { shortenedUrl: `${base}/${alias}` }
 }
