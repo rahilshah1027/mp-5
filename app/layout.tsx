@@ -1,6 +1,7 @@
+import { Metadata } from "next";
 import Header from "@/components/Header";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'URL Shortener | MP-5',
   description: 'A url shortening website',
 }
