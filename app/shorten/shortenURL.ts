@@ -16,7 +16,7 @@ export default async function shortenURL(url: string, alias: string) {
         return { error: "Please enter a valid URL! "}
     }
     
-    const base = "https://mp-5-wheat.vercel.app/"
+    const base = "https://mp-5-wheat.vercel.app"
     const urlCollection = await getCollection(URL_COLLECTION)
     const existing = await urlCollection.findOne({ alias })
   
